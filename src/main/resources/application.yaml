@@ -1,0 +1,27 @@
+debug: false
+nrepl:
+  bind: localhost
+  port: 6107
+  # port: 0
+elib:
+  storage:
+    root: /tmp/storage
+spring:
+  profiles:
+    active: dev
+  datasource:
+    # url: "jdbc:sqlite:///tmp/test.db"
+    # datasource-class-name: org.sqlite.JDBC
+    url: "jdbc:h2:///tmp/test"
+    datasource-class-name: org.h2.Driver
+  jpa:
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: "create"
+      # ddl-auto: "create-drop"
+      # dialect: org.hibernate.dialect.SQLiteDialect
+      # dialect: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true

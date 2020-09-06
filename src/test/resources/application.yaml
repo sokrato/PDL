@@ -1,0 +1,11 @@
+debug: false
+elib:
+  storage:
+    root: /tmp/test-storage
+spring:
+  datasource:
+    url: "jdbc:h2:mem:"
+    datasource-class-name: org.h2.Driver
+  jpa:
+    show-sql: true
+    hibernate.dialect: org.hibernate.dialect.H2Dialect
