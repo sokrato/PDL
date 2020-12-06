@@ -15,6 +15,7 @@ plugins {
 repositories {
     jcenter()
     mavenCentral()
+    maven("https://repo.clojars.org/")
     mavenLocal()
 }
 
@@ -33,8 +34,8 @@ dependencies {
 
     // implementation("org.clojars.sokrato:toolkit:0.1.0")
 //    implementation(files("/Users/xux/Documents/leth/clojure/toolkit/target/toolkit-0.1.1-SNAPSHOT.jar"))
-//    implementation("org.clojure:clojure:1.10.1")
-//    implementation("nrepl:nrepl:0.7.0")
+    implementation("org.clojure:clojure:1.10.1")
+    implementation("nrepl:nrepl:0.8.3")
 
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.springframework.boot:spring-boot-starter-web")
